@@ -2,21 +2,34 @@
   font-family: AbelRegular;
   src: url(../fonts/Abel-Regular.ttf);
 }
+
+:root{
+  --primary--color: #edf2fc;
+  --secondary-color: #7952b3;
+  --tert-color:#000;
+  
+}
+.dark-theme{
+  --primary--color: #000106;
+  --secondary-color: #000106;
+  --tert-color: white;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 h1 {
+  color:  var(--tert-color);
   font-family: AbelRegular;
 }
 
 body {
-  background-color: white;
+  background-color: var(--primary--color) !important;
 }
 
 .custom-bg {
-  background-color: #7952b3;
+  background-color: var(--secondary-color);
 }
 .btn-group {
   outline:none;
